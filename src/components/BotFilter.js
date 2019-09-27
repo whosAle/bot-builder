@@ -10,14 +10,14 @@ const BotFilter = (props) => {
   }
 
   return (
-    <div>
-      <h1>This is the filter controller, lets get filtering</h1>
-
-      <select name="robot-class-dropdown" onChange={handleChange}>
-        <option value="assult">assult</option>
-        <option value="defender">defender</option>
-        <option value="support">support</option>
-      </select>
+    <div className="column sixteen wide">
+      <form>
+        <select name="robot-class-dropdown">
+          <option value="assult">assult</option>
+          <option value="defender">defender</option>
+          <option value="support">support</option>
+        </select>
+      </form>
     </div>
   );
 }
